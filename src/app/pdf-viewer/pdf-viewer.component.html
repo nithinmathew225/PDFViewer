@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <div class="container-fluid ">
+       
+        <div class="row">
+            <div class="col mx-auto">
+                <div>
+                    IsMobile device - {{devicemode}}
+                </div>
+        
+        <pdf-viewer [src]="pdfURL" [render-text]="true" [original-size]="false" style="height: 80vh;"
+        class="w-100  document-viewer "></pdf-viewer>
+        </div>
+        </div>
+        
+        <div class="text-center">
+            <button  (click)="printPdf()" class="btn btn-primary yellow ms-1 btn-round">
+                Print
+            </button>
+            <button  (click)="openPdf()" class="btn btn-primary yellow ms-1 btn-round">
+                Open
+            </button>
+        </div>
+       
+
+    </div>
+    
+
+    
+
+  </body>
+</html>
